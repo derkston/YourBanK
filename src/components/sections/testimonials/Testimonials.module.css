@@ -1,0 +1,115 @@
+.testimonials {
+	margin-top: 4rem;
+}
+.testimonials__content_row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.testimonials__content_text {
+	width: 100%;
+	max-width: 50%;
+}
+.slider_tab {
+	display: flex;
+	justify-content: flex-end;
+	
+	padding: 10px;
+	border-radius: 20px;
+	border: 1px solid var(--borderBlack);
+}
+
+.slider {
+	margin-top: 80px;
+	display: flex;
+	position: relative;
+}
+.slider_navigation {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	top: 50%;
+}
+.slider_navigation button {
+	background-color: var(--black);
+	padding: 0;
+	width: 64px;
+	height: 64px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider_navigation button:last-child {
+	transform: rotate(180deg);
+}
+.slider__wrapper {
+	width: 80%;
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+.slide {
+	cursor: pointer;
+	width: 100%;
+	max-width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	position: relative;
+	border-top: 1px solid var(--borderBlack);
+
+}
+.slide__text {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.slide p {
+	
+	margin-bottom: 20px;
+	padding-top: 50px;
+	color: white;
+}
+.slide h3 {
+	color : var(--green);
+	text-align: center;
+
+}
+.slide h3 span {
+	font-size: 10px;
+}
+.icon {
+	position: absolute;
+	top: -20px;
+	background-color: var(--black);
+}
+@media (width < 768px) {
+	.slider__wrapper .slide:nth-child(1) , .slider__wrapper .slide:nth-child(3){
+		display: none;
+	}
+	.slider__wrapper .slide:nth-child(2){
+		max-width: 70%;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+@media (width < 500px) {
+	.slide {
+		max-width: 100%;
+	}
+	.testimonials__content_row {
+		flex-direction: column;
+	}
+	.testimonials__content_text {
+		max-width: 100%;
+		margin: 1rem 0;
+	}
+}

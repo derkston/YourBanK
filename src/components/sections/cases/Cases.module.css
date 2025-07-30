@@ -1,0 +1,126 @@
+.cases {
+	margin-top: 150px;
+}
+.cases__content p{
+	margin: 1.2rem 0;
+}
+.cases__content {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.solutions {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0;
+}
+
+.solutions:last-child{
+	flex-direction: row-reverse;
+}
+.cards {
+	width: 100%;
+	max-width: 49%;
+	gap: 10px;
+	display: grid;
+	grid-template-columns: repeat(2 , 1fr);
+	grid-template-rows: repeat(2,1fr);
+	padding: 3rem;
+	background-color: var(--black2);
+	border-radius: 50px;
+	position: relative;
+}
+.iconAbstract {
+	position: absolute;
+	top: 0;
+	z-index: 0;
+}
+
+.cards li {
+	width: 100%;
+	
+	padding: 1rem;
+	background-color: var(--black);
+	border: 1px solid var(--borderBlack);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	position: relative;
+	z-index: 1;
+}
+.solutions__info {
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	width: 100%;
+	max-width: 49%;
+}
+.solutions__info_list {
+	display: grid ;
+	grid-template-columns: repeat(3 , 1fr);
+}
+.solutions__info_list li {
+	width: 100%;
+	padding: 0 10px;
+	
+}
+.solutions__info_list li:nth-child(even){
+	border-left: 2px solid var(--borderBlack);
+	border-right: 2px solid var(--borderBlack);
+}
+.solutions__info_list li span {
+	display: block;
+	font-family: 'Lexend';
+	font-weight: 500;
+	font-style: Medium;
+	font-size: 4rem;
+	line-height: 150%;
+	letter-spacing: 0%;
+	text-align: center;
+}
+
+.solutions__info_list li p {
+	display: block;
+	text-align: center;
+}
+
+@media (width < 1200px) {
+	.solutions__info_list li span {
+		font-size: 3rem;
+	}
+}
+@media (width < 787px) {
+	.solutions__info_list li span {
+		font-size: 2rem;
+	}
+}
+@media (width < 500px) {
+	.solutions {
+		flex-wrap: wrap;
+	}
+	.solutions__info {
+		max-width: 100%;
+	}
+	.solutions__info a {
+		margin-top: 1rem;
+	}
+	.cards {
+		max-width: 100%;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+	.solutions__info_list {
+		grid-template-columns: 1fr;
+	}
+	.solutions__info_list li:nth-child(even){
+		border-left: none;
+		border-right: none;
+		border-top: 2px solid var(--borderBlack);
+		border-bottom: 2px solid var(--borderBlack);
+	}
+}

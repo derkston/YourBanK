@@ -1,0 +1,59 @@
+.pressReleases__content {
+	margin-top: 6rem;
+}
+.article__list {
+	display: grid;
+	grid-template-columns: repeat(2 , 1fr);
+	gap: 2rem;
+	margin-top: 4rem;
+}
+.pressReleases__article {
+	padding: 2rem;
+	border-radius: 50px 50px 15px 15px ;
+	background-color: var(--black);
+	border: 1px solid var(--borderBlack);
+}
+.pressReleases__article h4 {
+	color: white;
+	text-align: start;
+}
+.pressReleases__article img {
+	width: 100%;
+	min-height: 333px;
+	border-radius: 30px 30px 10px 10px;
+	margin-bottom: 3rem;
+	object-fit: fill;
+}
+.pressReleases__info {
+	display: flex;
+	flex-wrap:wrap ;
+	gap: 1rem;
+	align-items: center;
+	margin: 1.5rem 0;
+}
+.pressReleases__info span {
+	padding: 0.5rem 1rem;
+	background-color: var(--black);
+	border: 1px solid var(--borderBlack);
+	color: rgba(179, 179, 179, 1);
+	border-radius: 30px;
+}
+@media (width < 768px){
+	.pressReleases__article {
+		padding: 1.7rem;
+	}
+	.pressReleases__article img {
+		min-height: 270px;
+	}
+}
+@media (width < 550px) {
+	.pressReleases__article h4 {
+		font-size: 1.3rem;
+	}
+	.article__list {
+		grid-template-columns: 1fr;
+	}
+	.pressReleases__article img {
+		min-height: 200px;
+	}
+}

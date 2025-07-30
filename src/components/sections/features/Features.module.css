@@ -1,0 +1,91 @@
+.features__content {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.tabs {
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	overflow: hidden;
+}
+.tab_bar {
+	width: 100%;
+	max-width: 30%;
+	padding: 3rem;
+	background-color: var(--black2);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.tab_bar button {
+	width: 100%;
+	background-color: var(--black);
+	color: white;
+	border: 1px solid var(--borderBlack);
+}
+.tab_bar button.active {
+		color: var(--green);
+}
+.tabs ul {
+	width: 100%;
+	max-width: 65%;
+	display: none;
+	opacity: 0;
+	flex-wrap: wrap;
+	row-gap: 30px;
+	justify-content: space-between;
+}
+@keyframes show {
+	0% {
+		opacity: 0;
+		transform: scale(0.3);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+.tabs ul.active {
+	display: flex;
+	opacity: 1;
+	animation: show 3s forwards;
+}
+.tabs ul li {
+	width: 100%;
+	max-width: 49%;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	background-color: var(--black);
+	color: white;
+	border: 1px solid var(--borderBlack);
+	padding: 50px;
+	border-radius: 30px;
+}
+.tabs ul li h4 {
+	text-align: left;
+}
+.tabs ul li h4 span {
+	font-size: 12px;
+}
+
+@media (width < 500px) {
+	.tabs {
+		flex-direction: column;
+	}
+	.tabs ul {
+		margin-top: 1rem;
+		max-width: 100%;
+
+		flex-direction: column;
+	}
+	.tabs ul li {
+		max-width: 100%;
+	}
+	.tab_bar {
+		max-width: 100%;
+	}
+}
