@@ -52,7 +52,7 @@
 	gap: 1rem;
 }
 .requirements li::before {
-	content: url('/public/img/icons/brief.svg');
+	content: url('/img/icons/brief.svg');
 }
 @media (width < 1100px) {
 	.job__info {

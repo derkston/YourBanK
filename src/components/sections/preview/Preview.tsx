@@ -26,7 +26,7 @@ export const Preview = ({
 			<div className={style.preview__content}>
 				<div className={style.preview__left}>
 					{subtitle != '' ? <h4 className={style.subtitle}>
-						<img src="/public/img/icons/checkMark.svg" />
+						<img src="/img/icons/checkMark.svg" />
 						{subtitle}
 					</h4> : ''}
 					{title != '' ? <h1>

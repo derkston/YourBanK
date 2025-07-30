@@ -11,13 +11,13 @@ export const Footer = () => {
 			<ul className={style.footer__contact}>
 					<li>
 						<a href="tel:89089078760">
-							<img src="/public/img/icons/tel.svg" className={style.footer__contact_icon} />
+							<img src="/img/icons/tel.svg" className={style.footer__contact_icon} />
 							+79089078760
 						</a>
 					</li>
 					<li>
 						<a href="mailto:stepaarkadevich2019@gmail.com">
-							<img src="/public/img/icons/email.svg" className={style.footer__contact_icon} />
+							<img src="/img/icons/email.svg" className={style.footer__contact_icon} />
 							stepaarkadevich2019@gmail.com
 						</a>
 					</li>

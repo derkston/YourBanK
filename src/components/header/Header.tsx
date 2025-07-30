@@ -5,7 +5,7 @@ import style from './Header.module.css'
 
 export const Header = () => {
 	return <header className={style.header}>
-		<img className={style.icon} src="/public/img/icons/header-icon.svg"/>
+		<img className={style.icon} src="/img/icons/header-icon.svg"/>
 		<Container>
 			<div className={style.header__content}>
 				<Logo/>

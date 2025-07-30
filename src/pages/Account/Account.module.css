@@ -34,7 +34,7 @@
 	overflow: hidden;
 }
 .form__wrapper::before {
-	content: url('/public/img/AbstractDesign.svg');
+	content: url('/img/AbstractDesign.svg');
 	position: absolute;
 	top: 0;
 	right: 0;

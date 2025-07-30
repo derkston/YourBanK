@@ -10,21 +10,21 @@ export const Cases = () => {
 				<div className={style.solutions}>
 						
 					<ul className={style.cards}>
-						<img style={ {left : 0 ,}} src='/public/img/AbstractDesign2.svg' className={style.iconAbstract}/>
+						<img style={ {left : 0 ,}} src='/img/AbstractDesign2.svg' className={style.iconAbstract}/>
 						<li key='1'>
-							<img src='/public/img/icons/Group.svg' className='item__icon'/>
+							<img src='/img/icons/Group.svg' className='item__icon'/>
 							<h4>Managing Personal Finances</h4>
 						</li>
 						<li key='2'>
-							<img src='/public/img/icons/Frame.svg' className='item__icon'/>
+							<img src='/img/icons/Frame.svg' className='item__icon'/>
 							<h4>Saving for the Future</h4>
 						</li>
 						<li key='3'>
-							<img src='/public/img/icons/Union2.svg' className='item__icon'/>
+							<img src='/img/icons/Union2.svg' className='item__icon'/>
 							<h4>Homeownership</h4>
 						</li>
 						<li key='4'>
-							<img src='/public/img/icons/Subtract.svg' className='item__icon'/>
+							<img src='/img/icons/Subtract.svg' className='item__icon'/>
 							<h4>Education Funding</h4>
 						</li>
 					</ul>
@@ -51,21 +51,21 @@ export const Cases = () => {
 					<div className={style.solutions}>
 							
 					<ul className={style.cards}>
-						<img style={ {right : 0 ,}} src='/public/img/AbstractDesign.svg' className={style.iconAbstract}/>
+						<img style={ {right : 0 ,}} src='/img/AbstractDesign.svg' className={style.iconAbstract}/>
 						<li key='8'>
-							<img src='/public/img/icons/Subtract2.svg' className='item__icon'/>
+							<img src='/img/icons/Subtract2.svg' className='item__icon'/>
 							<h4>Startups and Entrepreneurs</h4>
 						</li>
 						<li key='9'>
-							<img src='/public/img/icons/mortgage.svg' className='item__icon'/>
+							<img src='/img/icons/mortgage.svg' className='item__icon'/>
 							<h4>Cash Flow Management</h4>
 						</li>
 						<li key='10'>
-							<img src='/public/img/icons/Subtract-1.svg' className='item__icon'/>
+							<img src='/img/icons/Subtract-1.svg' className='item__icon'/>
 							<h4>Business Expansion</h4>
 						</li>
 						<li key='11'>
-							<img src='/public/img/icons/Subtract-2.svg' className='item__icon'/>
+							<img src='/img/icons/Subtract-2.svg' className='item__icon'/>
 							<h4>Payment Solutions</h4>
 						</li>
 						

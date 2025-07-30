@@ -10,7 +10,7 @@ export const StartFinancial = () => {
 	return <section className={style.start_financial}>
 		<Container>
 			<div className={style.start_financial__content}>
-				<img src="/public/img/AbstractDesign2.svg" className={style.icon} />
+				<img src="/img/AbstractDesign2.svg" className={style.icon} />
 				<div className={style.start_financial_text}>
 					<h2>Start your financial journey with
 						<span>YourBank today!</span>

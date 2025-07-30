@@ -18,17 +18,17 @@ export const OurProduct = () => {
 					{individuals && <ul className={style.variants_products}>
 					
 						<li>
-						<img src="/public/img/icons/briefcase.svg" className='item__icon' />
+						<img src="/img/icons/briefcase.svg" className='item__icon' />
 						<h3>Checking Accounts <span>/For Individuals</span></h3>
 						<p>Enjoy easy and convenient access to your funds with our range of checking account options. Benefit from features such as online and mobile banking, debit cards, and free ATM access.</p>
 					</li>
 					<li>
-						<img src="/public/img/icons/Union.svg" className='item__icon' />
+						<img src="/img/icons/Union.svg" className='item__icon' />
 						<h3>Savings Accounts <span>/For Individuals</span></h3>
 						<p>Build your savings with our competitive interest rates and flexible savings account options. Whether you're saving for a specific goal or want to grow your wealth over time, we have the right account for you.</p>
 					</li>
 					<li>
-						<img src="/public/img/icons/mortgage.svg" className='item__icon' />
+						<img src="/img/icons/mortgage.svg" className='item__icon' />
 						<h3>Loans and Mortgages <span>/For Individuals</span></h3>
 						<p>Realize your dreams with our flexible loan and mortgage options. From personal loans to home mortgages, our experienced loan officers are here to guide you through the application process and help you secure the funds you need.</p>
 					</li>
@@ -39,17 +39,17 @@ export const OurProduct = () => {
 					<ul className={style.variants_products}>
 						
 						<li>
-						<img src="/public/img/icons/briefcase.svg"className='item__icon' />
+						<img src="/img/icons/briefcase.svg"className='item__icon' />
 						<h3>Checking Accounts <span>/For businesses</span></h3>
 						<p>Enjoy easy and convenient access to your funds with our range of checking account options. Benefit from features such as online and mobile banking, debit cards, and free ATM access.</p>
 					</li>
 					<li>
-						<img src="/public/img/icons/Union.svg"className='item__icon' />
+						<img src="/img/icons/Union.svg"className='item__icon' />
 						<h3>Savings Accounts <span>/For businesses</span></h3>
 						<p>Build your savings with our competitive interest rates and flexible savings account options. Whether you're saving for a specific goal or want to grow your wealth over time, we have the right account for you.</p>
 					</li>
 					<li>
-						<img src="/public/img/icons/mortgage.svg"className='item__icon' />
+						<img src="/img/icons/mortgage.svg"className='item__icon' />
 						<h3>Loans and Mortgages <span>/For businesses</span></h3>
 						<p>Realize your dreams with our flexible loan and mortgage options. From personal loans to home mortgages, our experienced loan officers are here to guide you through the application process and help you secure the funds you need.</p>
 					</li>
