@@ -41,7 +41,7 @@ export const Preview = ({
 						Open Account
 					</NavLink>
 				</div>
-				<img className={style.preview_img} src={images} />
+				<img className={style.preview_img} src={getImagePath(images)} />
 			</div>
 		</Container>
 	</section>
