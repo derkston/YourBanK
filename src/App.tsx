@@ -5,41 +5,43 @@ import './App.css'
 import { Footer } from './components/footer/footer'
 import { Header } from './components/header/Header'
 
-
 import { useState } from 'react'
 import { useUser } from './hooks/useUser'
 import { AppRoutes } from './routes/AppRoutes'
+import { UserContext, UpdateUserContext } from './components/context/AppContext'
 
- export const MOCK_USER = {
-    isLogged : false,
-    isRegister : false,
-    first_name : '',
-    last_name : '',
-    email : '',
-    password : '',
-  }
+export const MOCK_USER = {
+  isLogged: false,
+  isRegister: false,
+  first_name: '',
+  last_name: '',
+  email: '',
+  password: '',
+}
 
 function App() {
-
-  const {user , UserContext , UpdateUserContext} = useUser();
-  if(user == null || !user.isRegister ){
-    localStorage.setItem('user' , JSON.stringify(MOCK_USER))
+  const { user } = useUser();
+  
+  if (user == null || !user.isRegister) {
+    localStorage.setItem('user', JSON.stringify(MOCK_USER))
   }
-  const [isUser , setIsUser] = useState({isLogged : user.isLogged 
-    , isRegister : user.isRegister})
+  
+  const [isUser, setIsUser] = useState<{ isLogged: boolean, isRegister: boolean }>({
+    isLogged: user?.isLogged || false,
+    isRegister: user?.isRegister || false
+  })
 
- 
   return (
     <>
-    <UserContext value={isUser}>
-      <UpdateUserContext value={(isUser : {isLogged : boolean , isRegister : boolean}) => setIsUser(isUser)}>
-        <BrowserRouter>
-            <Header/>
-            <AppRoutes/>
-            <Footer/>
-        </BrowserRouter> 
-      </UpdateUserContext>  
-    </UserContext>
+      <UserContext.Provider value={isUser}>
+        <UpdateUserContext.Provider value={(newUser: { isLogged: boolean, isRegister: boolean }) => setIsUser(newUser)}>
+          <BrowserRouter>
+            <Header />
+            <AppRoutes />
+            <Footer />
+          </BrowserRouter>
+        </UpdateUserContext.Provider>
+      </UserContext.Provider>
     </>
   )
 }

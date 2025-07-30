@@ -1,13 +1,21 @@
 import { UpdateUserContext, UserContext } from '../components/context/AppContext'
 
-export function useUser(){
-	const userLocal = JSON.parse(localStorage.getItem('user'));
+interface User {
+  isLogged: boolean;
+  isRegister: boolean;
+  first_name: string;
+  last_name: string;
+  email: string;
+  password: string;
+}
 
-	return (
-		{
-			user : userLocal,
-			UserContext : UserContext , 
-			UpdateUserContext : UpdateUserContext, 
-		}
-	)
+export function useUser() {
+  const userLocalString = localStorage.getItem('user');
+  const userLocal: User | null = userLocalString ? JSON.parse(userLocalString) : null;
+
+  return {
+    user: userLocal,
+    UserContext: UserContext,
+    UpdateUserContext: UpdateUserContext,
+  }
 }
