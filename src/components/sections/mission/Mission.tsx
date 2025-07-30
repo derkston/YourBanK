@@ -1,5 +1,7 @@
 import { Container } from '../../container/Container'
+import { getImagePath } from '../../../utils/imagePath'
 import style from './Mission.module.css'
+
 export const Mission = () => {
 	return <section className={style.mission}>
 		<Container>
@@ -8,7 +10,7 @@ export const Mission = () => {
 					<p>We envision being a leading force in the industry, driven by innovation, integrity, and inclusivity, creating a brighter financial future for individuals and businesses while maintaining a strong commitment to customer satisfaction and community development</p>
 					<div className={style.mission_and_vision}>
 							<div className={style.mission_and_vision__images}>
-									<img src="/img/mission.png" />
+									<img src={getImagePath('img/mission.png')} />
 								</div>
 								<div className={style.mission_and_vision__text}>
 									<h3>Mission</h3>
@@ -23,7 +25,7 @@ export const Mission = () => {
 								<p>Our vision at YourBank is to redefine banking by creating a seamless and personalized experience for our customers. We envision a future where banking is accessible, transparent, and tailored to individual preferences. Through continuous innovation and collaboration, we strive to be at the forefront of the industry, setting new standards for customer-centric banking. Our vision is to be the preferred financial institution, known for our unwavering commitment to excellence, trust, and customer satisfaction.</p>
 							</div>
 								<div className={style.mission_and_vision__images}>
-							<img src="/img/vision.png" />
+							<img src={getImagePath('img/vision.png')} />
 						</div>
 					</div>
 			</div>

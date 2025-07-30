@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { NavLink } from 'react-router'
 import { Container } from '../../container/Container'
 import { UserContext } from '../../context/AppContext'
+import { getImagePath } from '../../../utils/imagePath'
 import style from './StartFinancial.module.css'
 
 export const StartFinancial = () => {
@@ -10,7 +11,7 @@ export const StartFinancial = () => {
 	return <section className={style.start_financial}>
 		<Container>
 			<div className={style.start_financial__content}>
-				<img src="/img/AbstractDesign2.svg" className={style.icon} />
+				<img src={getImagePath('img/AbstractDesign2.svg')} className={style.icon} />
 				<div className={style.start_financial_text}>
 					<h2>Start your financial journey with
 						<span>YourBank today!</span>
