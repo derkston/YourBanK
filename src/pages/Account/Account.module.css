@@ -34,7 +34,7 @@
 	overflow: hidden;
 }
 .form__wrapper::before {
-	content: url('/img/AbstractDesign.svg');
+	content: url('/YourBanK/img/AbstractDesign.svg');
 	position: absolute;
 	top: 0;
 	right: 0;
