@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { NavLink } from 'react-router'
 import { Container } from '../../container/Container'
 import { UserContext } from '../../context/AppContext'
+import { getImagePath } from '../../../utils/imagePath'
 import style from './Preview.module.css'
 
 type TPreviewContent = {
@@ -26,7 +27,7 @@ export const Preview = ({
 			<div className={style.preview__content}>
 				<div className={style.preview__left}>
 					{subtitle != '' ? <h4 className={style.subtitle}>
-						<img src="/img/icons/checkMark.svg" />
+						<img src={getImagePath('img/icons/checkMark.svg')} />
 						{subtitle}
 					</h4> : ''}
 					{title != '' ? <h1>
@@ -40,7 +41,7 @@ export const Preview = ({
 						Open Account
 					</NavLink>
 				</div>
-				<img className={style.preview_img} src={images} />
+				<img className={style.preview_img} src={getImagePath(images)} />
 			</div>
 		</Container>
 	</section>
